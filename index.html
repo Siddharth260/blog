@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: black;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body class="light-white">
+
+
+<div class="content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="container center padding-32 dark-light "> 
+  <h1><b>Welcome to MY BLOG</b></h1>
+  <p><b>Web development Languages</b></span></p>
+</header>
+
+<!-- Grid -->
+<div class="row">
+
+<!-- Blog entries -->
+<div class="col l8 s12">
+  <!-- Blog entry -->
+  <div class="card-4 margin white">
+    <img src="html.webp" alt="Nature" style="width:100%">
+    <div class="container">
+      <h3><b>HTML</b></h3>
+      <h5>Markup Language</h5>
+    </div>
+
+    <div class="container">
+      <p> HTML stands for HyperText Markup Language, which can be a confusing term for many beginners. The best way to explain HTML is to examine the meaning of each word.
+
+        HyperText refers to text that contains links to other texts. Every time you click on a highlighted or underlined link that takes you to another page, you are using hypertext. As more and more pages use hypertext to link to each other, a “web”
+        of pages starts to form. This is where we get the term World Wide Web.
+
+        Markup refers to the special symbols or codes that are inserted into a document to tell the web browser how to display the document data. For example, markup code may tell the browser to display a phrase in bold or italic text, or may tell
+        the browser which parts of the document are headings and which are paragraphs. HTML is just one of a number of languages that uses markup code.
+
+        Language refers to the idea that the code is standardized. Just like regular spoken languages, there are certain rules that everyone must follow when writing HTML. This is so that all browsers can understand and interpret the code. There are
+        many different programming languages, and you may have heard of some of the popular ones such as Java, Python and Ruby. Each language has its own unique set of rules, and many languages can be used in combination with HTML to create amazing
+        webpages and applications.
+
+        If we put these three definitions together, we could say that HTML is “a programming language that uses unique code which allows you to display linked documents in a browser”.</p>
+      <div class="row">
+        <div class="col m8 s12">
+          <p><button onclick="read_data()" class="button padding-large white border"><b>READ MORE »</b></button></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="card-4 margin white">
+  <img src="css.jpeg" alt="Norway" style="width:100%">
+    <div class="container">
+      <h3><b>CSS</b></h3>
+      <h5>Styling Language</h5>
+    </div>
+
+    <div class="container">
+      <p> CSS is a language that defines the design and layout of web pages. In other words, CSS controls how web pages look when loaded in a browser. We call this design and layout the “style” of the page. CSS is the standard
+        language for styling and typically works in conjunction with HTML (the language that defines the content of web pages).
+        CSS stands for Cascading Style Sheets. “Style Sheets” refers to the CSS document itself, and “Cascading” refers to how style rules are applied to page elements. I’ll explain what that means in more detail later on, but let’s first learn what
+        CSS does.
+        Without CSS, the web as we know it would look nothing like it does today.HTML and CSS go hand-in-hand in building the web pages we know and love. However, these are distinct languages, and it’s important to understand their different
+        purposes.
+
+        HTML (Hypertext Markup Language) determines the contents of a web page, including text, links, images, videos etc. An HTML file lists all of the “things” on a page, but it doesn’t specify how these things look when displayed in a browser.
+
+        CSS, as we now know, controls the style of these elements. CSS ensures the HTML contents appear to users the way it was intended by designers.
+
+        You might be wondering: Why separate these two languages? It’s a reasonable question, since HTML and CSS work together. The answer is that separating style and content makes developing websites much, much easier.
+
+        A brief history lesson: When HTML was first introduced in the 1990s, styling was much less of a consideration — the focus was more on just presenting information on a web page. Once developers had that down, the next step was adding
+        rudimentary visual embellishments like colors and fonts.
+       </p>
+      <div class="row">
+        <div class="col m8 s12">
+          <p><button class="button padding-large white border"><b>READ MORE »</b></button></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="col l4">
+  <!-- About Card -->
+  <div class="card margin margin-top">
+  <img src="js.png" style="width:100%">
+    <div class="container white">
+      <h4><b>JavaScript</b></h4>
+      <p> JavaScript is a scripting language. Scripting languages do not need to undergo compilation. They rely on special run-time environments and related interpreters—computer programs that execute code without compilation through various methods.
+        Modern web browsers include interpreters that can interpret Javascript code.The most popular environment you will find JavaScript outside of the browser is for NodeJS. NodeJS is a JavaScript engine that runs without a browser in a server
+        environment. This means you can use JavaScript to build a complete web
+        application from the backend to the frontend.
+
+        In addition, various mobile frameworks like Cordova, Ionic, and React Native allow developers to build mobile apps using web technology, including JavaScript for any scripting.
+        There are few real alternatives to JavaScript for executing code in a browser. These options offer an alternative syntax to JavaScript but are compiled to pure JavaScript before we can use them in a browser. Some popular alternatives to
+        JavaScript include CoffeeScript, TypeScript, and Dart.
+
+        When using these alternative languages, your code is translated to Javascript then executed in the browser.</p>
+    </div>
+  </div><hr>
+  <div class="card margin margin-top">
+  <img src="sql.jpeg" style="width:100%">
+    <div class="container white">
+      <h4><b>SQL</b></h4>
+      <p>Structured query language (SQL) is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values. You can use SQL statements to store, update, remove, search, and retrieve information from the database. You can also use SQL to maintain and optimize database performance.</p>
+    </div>
+  </div><hr>
+  <div class="card margin margin-top">
+  <img src="php.jpeg" style="width:100%">
+    <div class="container white">
+      <h4><b>PHP</b></h4>
+      <p>PHP is a recursive acronym for "PHP: Hypertext Preprocessor".
+
+        PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
+        
+        It is integrated with a number of popular databases, including MySQL, PostgreSQL, Oracle, Sybase, Informix, and Microsoft SQL Server.
+        
+        PHP is pleasingly zippy in its execution, especially when compiled as an Apache module on the Unix side. The MySQL server, once started, executes even very complex queries with huge result sets in record-setting time.
+        
+        PHP supports a large number of major protocols such as POP3, IMAP, and LDAP. PHP4 added support for Java and distributed object architectures (COM and CORBA), making n-tier development a possibility for the first time.
+        
+        PHP is forgiving: PHP language tries to be as forgiving as possible.
+        
+        PHP Syntax is C-Like.</p>
+    </div>
+  </div><hr>
+
+ 
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END content -->
+</div>
+
+<!-- Footer -->
+<footer class="container dark-grey padding-32">
+<?php 
+$b = mysqli_connect("localhost","root","","Blog")or die("database error");
+?> 
+      <div class="container">
+          <form action="index.php" method="POST">
+                <div class="row">
+                  <div class="col-25">
+                    <label >First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="name" placeholder="Your name..">
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-25">
+                    <label for="country">Country</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="country" name="country">
+                      <option >Select Country</option>
+                      <option >Australia</option>
+                      <option >Canada</option>
+                      <option >USA</option>
+                      <option >India</option>
+                      <option >Banglasdesh</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject"  placeholder="Write something.." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit" name="save">
+                </div>
+          </form>
+      </div>
+    
+
+</footer>
+
+</body>
+</html>
